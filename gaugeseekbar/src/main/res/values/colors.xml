@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#00FF00</color>
+    <color name="red">#FF0000</color>
+
+    <color name="default_thumb_color">#ff6f00</color>
+    <color name="default_track_color">#c3a9a9a9</color>
+
+    <array name="default_index_gradient">
+        <item>@color/green</item>
+        <item>@color/red</item>
+    </array>
+
+    <array name="default_track_gradient">
+        <item>@color/default_track_color</item>
+    </array>
+
+
+</resources>

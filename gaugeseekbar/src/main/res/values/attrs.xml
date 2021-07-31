@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GaugeSeekBar">
+        <attr name="startAngleDegrees" format="float" />
+        <attr name="thumbRadius" format="dimension" />
+        <attr name="thumbDrawable" format="reference" />
+        <attr name="showThumb" format="boolean" />
+        <attr name="isThumbOutside" format="boolean" />
+        <attr name="thumbColor" format="color" />
+        <attr name="trackGradient" format="color" />
+        <attr name="showProgress" format="boolean" />
+        <attr name="trackGradientPositions" format="reference" />
+        <attr name="progress" format="float" />
+        <attr name="interactive" format="boolean" />
+        <attr name="trackWidth" format="dimension" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="progressGradient" format="reference" />
+        <attr name="progressGradientPositions" format="reference" />
+    </declare-styleable>
+</resources>
