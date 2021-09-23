@@ -24,9 +24,6 @@ class FragmentAnimatedProgress : Fragment() {
                     progress.setProgressGradientArray(IntArray(R.array.newProgressColor))
                 }
                 progress.setProgress(it.animatedValue as Float)
-                progress1.setProgress(it.animatedValue as Float)
-
-
             }
             valueAnimator.start()
         }

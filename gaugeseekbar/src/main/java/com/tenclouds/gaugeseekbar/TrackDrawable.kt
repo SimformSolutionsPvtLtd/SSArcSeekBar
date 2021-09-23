@@ -76,11 +76,13 @@ class TrackDrawable(position: PointF,
                     centerPosition.y + radiusPx - margin - 60)
         }
 
-        canvas.drawArc(rect,
-                90f + startAngle,
-                angle,
-                false,
-                progressPaint)
+        canvas.drawArc(
+            rect,
+            90f + startAngle,
+            angle,
+            false,
+            progressPaint
+        )
     }
 
     override fun setAlpha(alpha: Int) {}

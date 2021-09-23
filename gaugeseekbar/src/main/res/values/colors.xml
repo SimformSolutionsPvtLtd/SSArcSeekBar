@@ -15,5 +15,7 @@
         <item>@color/default_track_color</item>
     </array>
 
+    <color name="default_progress_primary_color">#FFA036</color>
+    <color name="default_progress_secondary_color">#111111</color>
 
 </resources>

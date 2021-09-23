@@ -8,6 +8,7 @@
 
     <array name="progressRainbow">
         <item>@android:color/holo_blue_light</item>
+        <item>@android:color/white</item>
         <item>@android:color/holo_red_light</item>
         <item>@android:color/holo_green_light</item>
     </array>
