@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp">
+
+    <com.tenclouds.gaugeseekbar.GaugeSeekBar
+        android:id="@+id/progress"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        app:interactive="false"
+        android:rotation="-90"
+        android:layout_marginEnd="-150dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress="0.5"
+        app:isThumbOutside="true"
+        app:startAngleDegrees="80"
+        app:progressGradient="@array/progressColor"
+        app:thumbColor="@color/color_progress"
+        app:thumbDrawable="@drawable/triangleright"
+        app:thumbRadius="8dp"
+        app:trackWidth="15dp" />
+
+    <com.tenclouds.gaugeseekbar.GaugeSeekBar
+        android:id="@+id/progress1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        app:interactive="false"
+        android:rotation="-90"
+        app:layout_constraintDimensionRatio="0.95"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress="0.5"
+        app:isThumbOutside="false"
+        app:startAngleDegrees="60"
+        app:progressWidth="8dp"
+        app:progressGradient="@array/progressColor"
+        app:thumbColor="@color/color_progress"
+        app:thumbDrawable="@drawable/ic_up_triangle_thumb_white"
+        app:thumbRadius="8dp"
+        app:trackWidth="8dp" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/update_gauge_seekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar"
+        app:layout_goneMarginTop="15dp" />
+</android.support.constraint.ConstraintLayout>
