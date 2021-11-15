@@ -5,5 +5,7 @@
     <string name="update_gauge_seekbar">Update gauge seekbar</string>
     <string name="unstyled_seekbar">Unstyled seekbar</string>
     <string name="animated_progress">Animated progress</string>
+    <string name="seekbar_with_section">Segmented seekbar</string>
     <string name="custom_thumb">Custom Thumb</string>
+    <string name="one">1</string>
 </resources>

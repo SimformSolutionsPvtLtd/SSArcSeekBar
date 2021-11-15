@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction().replace(R.id.content_frame, FragmentUnstyledSeekbar()).commit()
 
         navigationAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1)
-        navigationAdapter.addAll(getString(R.string.unstyled_seekbar), getString(R.string.animated_progress), getString(R.string.custom_thumb))
+        navigationAdapter.addAll(getString(R.string.unstyled_seekbar), getString(R.string.animated_progress), getString(R.string.custom_thumb), getString(R.string.seekbar_with_section))
 
         navigationDrawer.apply {
             adapter = navigationAdapter
@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
                     0 -> supportFragmentManager.beginTransaction().replace(R.id.content_frame, FragmentUnstyledSeekbar()).commit()
                     1 -> supportFragmentManager.beginTransaction().replace(R.id.content_frame, FragmentAnimatedProgress()).commit()
                     2 -> supportFragmentManager.beginTransaction().replace(R.id.content_frame, FragmentCustomThumb()).commit()
+                    3 -> supportFragmentManager.beginTransaction().replace(R.id.content_frame, FragmentSeekbarWithSection()).commit()
                 }
                 drawerLayout.closeDrawers()
             }

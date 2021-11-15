@@ -17,4 +17,21 @@
         <attr name="progressGradient" format="reference" />
         <attr name="progressGradientPositions" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="SegmentedArc">
+        <attr name="start_progress" format="integer" />
+        <attr name="progress_primary_color" format="color" />
+        <attr name="progress_primary_disable_color" format="color" />
+        <attr name="progress_secondary_color" format="color" />
+        <attr name="progress_secondary_disable_color" format="color" />
+        <attr name="progress_primary_circle_size" format="float" />
+        <attr name="progress_secondary_circle_size" format="float" />
+        <attr name="progress_primary_stroke_width" format="float" />
+        <attr name="progress_secondary_stroke_width" format="float" />
+        <attr name="sweep_angle" format="integer" />
+        <attr name="start_offset" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="min" format="integer" />
+        <attr name="progress_radius" format="float" />
+    </declare-styleable>
 </resources>
