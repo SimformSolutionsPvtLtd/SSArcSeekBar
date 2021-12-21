@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="20dp">
 
-    <com.tenclouds.gaugeseekbar.GaugeSeekBar
+    <com.ssarcseekbar.app.GaugeSeekBar
         android:id="@+id/progress"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -15,12 +15,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:showProgress="false"
         app:startAngleDegrees="90"
-        app:thumbColor="@color/colorPrimary"
-        app:thumbDrawable="@drawable/custom_thumb"
-        app:trackGradient="@array/progressRainbow"
-        app:trackWidth="13dp" />
+        app:thumbDrawable="@drawable/custom_thumb_android"
+        app:trackWidth="13dp"
+        app:progressGradient="@array/progressColor"
+        app:thumbRadius="15dp"/>
 
     <TextView
         android:id="@+id/progressText"

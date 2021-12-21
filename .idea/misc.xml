@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.34307692307692306" />
+        <entry key="sampleapp/src/main/res/drawable/custom_thumb_android.xml" value="0.33282051282051284" />
+        <entry key="sampleapp/src/main/res/layout/activity_main.xml" value="0.15653495440729484" />
+        <entry key="sampleapp/src/main/res/layout/fragment_animated_progress.xml" value="0.15653495440729484" />
+        <entry key="sampleapp/src/main/res/layout/fragment_custom_thumb.xml" value="0.33" />
+        <entry key="sampleapp/src/main/res/layout/fragment_seekbar_with_section.xml" value="0.33" />
+        <entry key="sampleapp/src/main/res/layout/fragment_unstyled_seekbar.xml" value="0.15653495440729484" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

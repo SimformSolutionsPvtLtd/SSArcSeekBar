@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.tenclouds.gaugeseekbar.segmented.SegmentedArc
+    <com.ssarcseekbar.app.segmented.SegmentedArc
         android:id="@+id/segmentedArc"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:max="40"
         app:progress_primary_circle_size="20"
-        app:progress_primary_color="@color/colorAccent"
+        app:progress_primary_color="@color/color_progress"
         app:progress_radius="380"
         app:progress_secondary_circle_size="15"
         app:progress_secondary_color="@color/colorPrimaryDark"
