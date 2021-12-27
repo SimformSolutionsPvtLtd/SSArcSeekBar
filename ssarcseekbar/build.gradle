@@ -5,8 +5,6 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
-apply from: 'dependencies.gradle'
-
 android {
     compileSdkVersion 31
     defaultConfig {
@@ -46,21 +44,4 @@ dependencies {
 
 repositories {
     mavenCentral()
-}
-
-task generateArtifactoryConfig {
-    def pattern = 'gaugeseekbar/build/outputs/aar/gaugeseekbar-release.aar'
-    def target = "${libraryRepo}/${libraryGroup}/${libraryModule}/${libraryVersion}/${libraryModule}-${libraryVersion}.aar"
-
-    def jsonBuilder = new JsonBuilder()
-    def contact = [[getPattern: { pattern }, getTarget: { target }]]
-    jsonBuilder { files contact.collect { [pattern: it.getPattern(), target: it.getTarget()] } }
-
-    def stringsFile = new File("artifactory.config")
-    stringsFile.delete()
-    stringsFile.write(jsonBuilder.toString())
-}
-
-build.doLast {
-    generateArtifactoryConfig.execute()
 }
