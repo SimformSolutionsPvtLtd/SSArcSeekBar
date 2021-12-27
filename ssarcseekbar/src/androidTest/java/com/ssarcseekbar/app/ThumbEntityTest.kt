@@ -2,7 +2,7 @@ package com.ssarcseekbar.app
 
 import android.graphics.PointF
 import android.graphics.drawable.Drawable
-import android.support.test.runner.AndroidJUnit4
+import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
 import org.junit.Test
