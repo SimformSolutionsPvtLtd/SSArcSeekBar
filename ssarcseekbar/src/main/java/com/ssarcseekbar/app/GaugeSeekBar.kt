@@ -5,9 +5,9 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.graphics.Canvas
 import android.graphics.PointF
-import android.support.annotation.DimenRes
-import android.support.annotation.FloatRange
-import android.support.v4.content.ContextCompat
+import androidx.annotation.DimenRes
+import androidx.annotation.FloatRange
+import androidx.core.content.ContextCompat
 import android.util.AttributeSet
 import android.util.Log
 import android.view.MotionEvent

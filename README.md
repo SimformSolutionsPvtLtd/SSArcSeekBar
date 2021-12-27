@@ -1,8 +1,9 @@
 # 🌈 SSArcSeekBar
 #### Choose your way to flaunt the progress.
 [![Android-Studio](https://img.shields.io/badge/Android%20Studio-ArcticFox-orange.svg?style=flat)](https://developer.android.com/studio/)
+[![](https://jitpack.io/v/SimformSolutionsPvtLtd/SSJetPackComposeProgressButton.svg)](https://jitpack.io/#SimformSolutionsPvtLtd/SSArcSeekBar)
 ![Language](https://img.shields.io/badge/language-Kotlin-orange.svg)
-[![Kotlin Version](https://img.shields.io/badge/Kotlin-v1.5.20-blue.svg)](https://kotlinlang.org)
+[![Kotlin Version](https://img.shields.io/badge/Kotlin-v1.6.10-blue.svg)](https://kotlinlang.org)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 
 Different type of arc seekbar. Easy to use and configure your own seekbar using all the attributes.
@@ -55,7 +56,7 @@ Different type of arc seekbar. Easy to use and configure your own seekbar using 
 
   ```groovy
         dependencies {
-	        implementation 'com.github.SimformSolutionsPvtLtd:SSArcSeekBar:Tag'
+	        implementation 'com.github.SimformSolutionsPvtLtd:SSArcSeekBar:1.0.0'
 	    }
   ```
   
