@@ -1,7 +1,7 @@
 # 🌈 SSArcSeekBar
 #### Choose your way to flaunt the progress.
 [![Android-Studio](https://img.shields.io/badge/Android%20Studio-ArcticFox-orange.svg?style=flat)](https://developer.android.com/studio/)
-[![](https://jitpack.io/v/SimformSolutionsPvtLtd/SSJetPackComposeProgressButton.svg)](https://jitpack.io/#SimformSolutionsPvtLtd/SSArcSeekBar)
+[![](https://jitpack.io/v/SimformSolutionsPvtLtd/SSArcSeekBar.svg)](https://jitpack.io/#SimformSolutionsPvtLtd/SSArcSeekBar)
 ![Language](https://img.shields.io/badge/language-Kotlin-orange.svg)
 [![Kotlin Version](https://img.shields.io/badge/Kotlin-v1.6.10-blue.svg)](https://kotlinlang.org)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
@@ -56,7 +56,7 @@ Different type of arc seekbar. Easy to use and configure your own seekbar using 
 
   ```groovy
         dependencies {
-	        implementation 'com.github.SimformSolutionsPvtLtd:SSArcSeekBar:1.0.0'
+	        implementation 'com.github.SimformSolutionsPvtLtd:SSArcSeekBar:1.0.2'
 	    }
   ```
   
@@ -64,15 +64,15 @@ Different type of arc seekbar. Easy to use and configure your own seekbar using 
   
   ```kotlin
         <com.ssarcseekbar.app.GaugeSeekBar
-        android:id="@+id/progress"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:thumbRadius="18dp"
-        app:trackWidth="18dp" />
+            android:id="@+id/progress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:thumbRadius="18dp"
+            app:trackWidth="18dp" />
   ```
   
 * Now get the progress 
@@ -87,29 +87,29 @@ Different type of arc seekbar. Easy to use and configure your own seekbar using 
 
   ```kotlin
         <com.ssarcseekbar.app.GaugeSeekBar
-        android:id="@+id/progress"
-        ...
-        app:startAngleDegrees="90"
-        app:thumbColor="@color/colorPrimary"
-        app:thumbDrawable="@drawable/custom_thumb"
-        app:trackGradient="@array/progressRainbow"
-        app:trackWidth="13dp" />
+            android:id="@+id/progress"
+            ...
+            app:startAngleDegrees="90"
+            app:thumbColor="@color/colorPrimary"
+            app:thumbDrawable="@drawable/custom_thumb"
+            app:trackGradient="@array/progressRainbow"
+            app:trackWidth="13dp" />
   ```
   
 * Segmented arc seekbar
 
   ```kotlin
         <com.ssarcseekbar.app.segmented.SegmentedArc
-        android:id="@+id/segmentedArc"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:max="40"
-        app:progress_primary_circle_size="20"
-        app:progress_primary_color="@color/color_progress"
-        app:progress_radius="380"
-        app:progress_secondary_circle_size="15"
-        app:progress_secondary_color="@color/colorPrimaryDark"
-        app:start_offset="40" />
+            android:id="@+id/segmentedArc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:max="40"
+            app:progress_primary_circle_size="20"
+            app:progress_primary_color="@color/color_progress"
+            app:progress_radius="380"
+            app:progress_secondary_circle_size="15"
+            app:progress_secondary_color="@color/colorPrimaryDark"
+            app:start_offset="40" />
   ```
   
 * Add animation for the progress, show animation when it is first time loaded on screen 
@@ -126,7 +126,7 @@ Different type of arc seekbar. Easy to use and configure your own seekbar using 
         }
 
         // Add delay before starting the animation
-        GlobalScope.launch(Dispatchers.Main) {
+        lifecycleScope.launch(Dispatchers.Main) {
             delay(1000)
             valueAnimator(view.segmentedArcSeekbar.getMax(), oldProgressValue)
         }

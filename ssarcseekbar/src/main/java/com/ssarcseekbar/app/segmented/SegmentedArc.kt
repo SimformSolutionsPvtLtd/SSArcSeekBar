@@ -90,7 +90,7 @@ class SegmentedArc : View {
 
     private fun initXMLAttrs(context: Context, attrs: AttributeSet?) {
         val a = context.obtainStyledAttributes(attrs, R.styleable.SegmentedArc)
-        progress = a.getInt(R.styleable.SegmentedArc_start_progress, 1)
+        setSegmentedProgress(a.getInt(R.styleable.SegmentedArc_start_progress, 1))
         setProgressPrimaryColor(
             a.getColor(
                 R.styleable.SegmentedArc_progress_primary_color,
@@ -131,7 +131,6 @@ class SegmentedArc : View {
         setStartOffset(a.getInt(R.styleable.SegmentedArc_start_offset, 30))
         setMax(a.getInt(R.styleable.SegmentedArc_max, 25))
         setMin(a.getInt(R.styleable.SegmentedArc_min, 1))
-        deg = (min + 2).toFloat()
         setProgressRadius(a.getFloat(R.styleable.SegmentedArc_progress_radius, -1f))
         a.recycle()
     }
@@ -297,12 +296,14 @@ class SegmentedArc : View {
         return super.dispatchTouchEvent(event)
     }
 
-    var progress: Int
-        get() = (deg - 2).toInt()
-        set(x) {
-            deg = (x + 2).toFloat()
-            invalidate()
-        }
+    fun getSegmentedProgress(): Int {
+        return (deg - 2).toInt()
+    }
+
+    fun setSegmentedProgress(progress: Int) {
+        deg = (progress + 2).toFloat()
+        invalidate()
+    }
 
     fun getProgressPrimaryColor(): Int {
         return progressPrimaryColor

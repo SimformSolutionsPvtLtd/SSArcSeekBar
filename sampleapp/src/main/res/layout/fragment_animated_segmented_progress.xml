@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ssarcseekbar.app.segmented.SegmentedArc
+        android:id="@+id/animateSegmentedArc"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progress_primary_circle_size="20"
+        app:progress_primary_color="@color/color_progress"
+        app:progress_secondary_circle_size="15"
+        app:progress_secondary_color="@color/colorPrimaryDark"
+        app:start_offset="40" />
+
+    <TextView
+        android:id="@+id/animatedProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/one"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/animateSegmentedArc"
+        app:layout_constraintEnd_toEndOf="@id/animateSegmentedArc"
+        app:layout_constraintStart_toStartOf="@id/animateSegmentedArc"
+        app:layout_constraintTop_toTopOf="@id/animateSegmentedArc" />
+
+    <TextView
+        android:id="@+id/enterValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter progress Value"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintTop_toBottomOf="@id/animateSegmentedArc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edtProgressValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        app:layout_constraintStart_toEndOf="@id/enterValueTextView"
+        app:layout_constraintTop_toBottomOf="@id/animateSegmentedArc"/>
+
+    <Button
+        android:id="@+id/btnAnimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:inputType="number"
+        android:text="@string/animate_progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterValueTextView"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
