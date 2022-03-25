@@ -7,5 +7,8 @@
     <string name="animated_progress">Animated progress</string>
     <string name="seekbar_with_section">Segmented seekbar</string>
     <string name="custom_thumb">Custom Thumb</string>
+    <string name="animated_segmented_progress">Animated Segmented Progress</string>
+    <string name="animate_progress">Animate Progress</string>
+    <string name="enter_progress_value">Enter progress value</string>
     <string name="one">1</string>
 </resources>
